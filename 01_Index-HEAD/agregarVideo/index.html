@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Agregando video</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <!--La etiqueta video contiene dos propiedades-->
+                    <!--control permite reproducir/parar, adelantar, de lo contrario parece una imagen-->
+                    <!--preload permite cargar previamente el archivo conforme se carga la pagina-->
+                <!--Mala practica semanticamente hablando de agregar un video-->
+                    <!-- <video src="https://www.youtube.com/watch?v=B4LvDiIi128" controls preload="auto"></video> -->
+                <!--Buena practica semanticamente hablando-->
+                <video controls preload="auto">
+                    <source src="https://www.youtube.com/watch?v=B4LvDiIi128" /> 
+                    <source src="https://www.youtube.com/watch?v=B4LvDiIi128">
+                    <!--Ademas de que usar source dentro de la etiqueta video como buena practica-->
+                    <!--Podemos agregar tantas etiquetas source como deseemos-->
+                    <!--Esto se hace para agregar varios recursos/formatos de un video en caso de que-->
+                    <!--El navegador no pueda reconocer/cargar alguno y nos muestre otro-->
+                    <!--Tambien podemos indicar al video en que momento comenzar a reproducirse y en cual detenerse-->
+                    <source src="https://www.youtube.com/watch?v=B4LvDiIi128#t=30, 1.30" />
+                    <!--Agregamos justo despues de la ubicacion del video-->
+                    <!--#t=segInicialDeReproduccion, segFinalDeReproduccion-->
+                </video>
+            </section>
+        </main>
+    </body>
+</html>
