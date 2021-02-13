@@ -11,30 +11,44 @@
     </head>
     <h3>Imágenes agregadas sin estilo, solo se hace uso de la etiqueta img sin más.</h3>
     <main>
-        <p>Imagenes de aves en diferentes tamaños.</p>
-        <ul>
-            <li>
-                <p>Imagen Pequeña</p>
-                <figure>                <!--Por convencion, la etiqueta img debe estar contenida en: figure-->
-                                        <!--La etiqueta img tiene dos atributos-->
-                                            <!--src: Ruta del archivo-->
-                                            <!--alt: Mensaje en el sitio de la imagen si hay un error-->
-                    <img src="./Pequeña.jpg" alt="Imagen pequeña de un ave" />
-                </figure>
-            </li>
-            <li>
-                <p>Imagen Mediana</p>
-                <figure>
-                    <img src="./Mediana.jpg" alt="Imagen mediana de un ave" />
-                </figure>
-            </li>
-            <li>
-                <p>Imagen Grande</p>
-                <figure>
-                    <img src="./Grande.jpg" alt="Imagen grande de un ave" />
-                </figure>
-            </li>
-        </ul>
+        <section>
+                <p>Imagenes de aves en diferentes tamaños.</p>
+                <ul>
+                    <li>
+                    <p>Imagen Pequeña</p>
+                    <!--Podemos usar div y no figure pero es una mala practica en cuanto a semantica de HTML-->
+                    <figure>                <!--Por convencion, la etiqueta img debe estar contenida en: figure-->
+                        <!--La etiqueta img tiene dos atributos-->
+                        <!--src: Ruta del archivo-->
+                        <!--alt: Mensaje en el sitio de la imagen si hay un error-->
+                        <img src="./Pequeña.jpg" alt="Imagen pequeña de un ave" />
+                        <!--Es parecida a alt en img, pero nos muestra una descripcion justo debajo de la imagen-->
+                        <!--Si se usa div y no figure, se hace con la etiqueta p-->
+                        <figcaption>
+                            Imagen pequeña de un ave
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <p>Imagen Mediana</p>
+                    <figure>
+                        <img src="./Mediana.jpg" alt="Imagen mediana de un ave" />
+                    </figure>
+                    <figcaption>
+                        Imagen mediana de un ave
+                    </figcaption>
+                </li>
+                <li>
+                    <p>Imagen Grande</p>
+                    <figure>
+                        <img src="./Grande.jpg" alt="Imagen grande de un ave" />
+                    </figure>
+                    <figcaption>
+                        Imagen grande de un ave
+                    </figcaption>
+                </li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
