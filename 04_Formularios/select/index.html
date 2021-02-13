@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Select</title>
+</head>
+<body>
+    <main>
+        <!--MALA PRACTICA
+        <section>
+            <select name="Cursos" id="">
+                <option value="Javascript">Javascript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Web Standars">Web Standars</option>
+            </select>
+        </section>
+        -->
+        <!--BUENA PRACTICA-->
+        <section>
+            <input list="cursos" />
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standars"></option>
+            </datalist>
+        </section>
+    </main>
+</body>
+</html>
