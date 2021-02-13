@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Uso de Formularios</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <!--COMO NO GENERAR UN FORMULAIRO-->
+                <div>
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                </div>
+                <!--FORMA CORRECTA DE GENERAR UN FORMULARIO-->
+                <form action="">                        <!--Sección de un documento que contiene controles interactivos -->
+                    <label for="Nombre">                    <!--Etiqueta para un elemento en una interfaz de usuario-->
+                        <span>¿Cuál es tu nombre? </span>     <!--Sirve para aplicar estilo al texto o agrupar elementos en línea.-->
+                                                                <!--INPUT: Formulario a rellenar-->
+                        <input type="text" id="Nombre" placeholder="Nombre completo">     
+                                                            <!--Placeholder: Mensaje dentro del input-->
+                                                            <!--type: tipo de formulario-->
+                                                            <!--Id debe ser el mismo del for-->
+                    </label>
+                </form>
+                <form action="">
+                    <label for="fecha-nacimiento">
+                        <span>Fecha nacimiento: </span>
+                        <input type="date" id="fecha-nacimiento" /> <!--Type: date = Fecha, despliega un calendario-->
+                    </label>
+                </form>
+                <form action="">
+                    <label for="hora-dormir">
+                        <span>¿A que hora sueles dormir? </span>
+                        <input type="time" id="hora-dormir" /> <!--Type:time: Tiempo, elige un horario del dia-->
+                    </label>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
