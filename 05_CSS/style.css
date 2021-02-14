@@ -1,0 +1,16 @@
+p{
+    color:blueviolet;
+    font-size: 40px;
+}   
+
+/*CLASS*/
+.clase{
+    color: rgb(50, 148, 205);
+    font-size: 15px;
+}
+
+/*ID*/
+#ide{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
