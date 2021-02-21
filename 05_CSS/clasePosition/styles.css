@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    width: 80%;
+    min-width: 44rem;
+    max-width: 46rem;
+    height: 95%;
+    min-height: 57rem;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.parent{
+    margin: 1rem 1rem;
+    width: 44rem;
+    height: 59rem;
+    border: 1rem black solid;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(187, 130, 130, 0.938);
+}
+
+.box{
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+}
+
+#one{  
+    font-size: 5.2rem;
+}
+#three{
+    font-size: 2.3rem;
+}
+#four{
+    font-size: 3.9rem;
+}
+#two figure img{
+    width: 36.6rem;
+    height: 24.9rem;
+    margin: 1rem 2rem;
+}
+#five figure img{
+    position: relative;
+    width: 2.5rem;
+    height: 4.5rem;
+    top: 0.8rem;
+}
+#five h4{
+  font-size: 4rem;
+}
+.belly, .extra{
+    display: inline-block;
+}
+.extra{
+    max-width: 50%;
+}
+.marine{
+    position: relative;
+    font-size: 3.5rem;
+    bottom: 1.5rem;
+}
