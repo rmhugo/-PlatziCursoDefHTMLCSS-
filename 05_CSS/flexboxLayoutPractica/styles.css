@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body, .nav-header, .container, .nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav-header{
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blueviolet;
+}
+.nav{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 34rem;
+    background-color: darkkhaki;   
+}
+.nav-header h1{
+    background-color: darkgreen;
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.7rem;
+    background-color: darkred;
+}
+.container{
+    flex-direction: row;
+    background-color: cadetblue;
+}
+.container aside{
+    padding: 1.5rem 1.5rem;
+    background-color: fuchsia;
+}
+.container aside blockquote{
+    background-color: deeppink;
+    width: 5rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.footer{
+    background-color: darkcyan;
+}
+.nav-header, .footer{
+    padding: 1rem 1rem;
+}
