@@ -1,0 +1,39 @@
+/*Creando variables
+-Siempre van en esta seccion*/
+:root{
+    /*Declaracion universal de variable
+    --nombre-variable: valor-variable;
+    */
+    --primary-color: #003476;
+    --secundary-color: #4d2f74;
+    --header-size: 4rem;
+    --font-size: 1.8rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DotGothic16', sans-serif;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color:var(--primary-color);
+    font-size: var(--header-size);
+}
+main{
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--font-size);
+}
+h1{
+    
+}
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color);
+}
